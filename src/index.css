@@ -77,6 +77,7 @@ h1 {
 #players.highlight-player li.active {
   border-color: #f6e35a;
   animation: pulse 2s infinite ease-in-out;
+  border-radius: 0.6rem;
 }
 
 #players.highlight-player li.active .player-name,
@@ -85,19 +86,26 @@ h1 {
 }
 
 #players button {
-  width: 3rem;
-  border: none;
-  background: none;
+  width: 3.2rem;
+  height: 35px;
+  border: #383624;
+  background-color: rgba(0, 0, 0, 0.4);
   color: #c3ba78;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
   padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 5px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all 0.2s, color 0.2s;
 }
 
 #players button:hover {
   color: #f8ca31;
+  box-shadow: 2px 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .player {
@@ -188,6 +196,7 @@ ol {
   cursor: pointer;
   font-family: 'Caprasimo', cursive;
   padding: 1rem;
+  border-radius: 0.6rem;
 }
 
 #game-over {
@@ -253,6 +262,7 @@ ol {
   border-radius: 4px;
   animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   margin: 0.75rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #log li.highlighted {
